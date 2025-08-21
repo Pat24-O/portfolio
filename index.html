@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrick Ouma Ombok - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      color: #333;
+    }
+
+    /* --- HEADER --- */
+    header {
+      background: #1a1a40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- HERO / ABOUT SECTION --- */
+    #about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      background: #f0f4ff; /* same background for pic + about */
+    }
+    .about-left {
+      text-align: center;
+    }
+    .about-left img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    .about-left h2 {
+      margin-top: 15px;
+      font-size: 22px;
+      color: #1a1a40;
+    }
+    .about-left p {
+      font-weight: bold;
+      color: #555;
+    }
+    .about-right {
+      max-width: 600px;
+    }
+
+    /* --- MAIN FLEX SECTION (skills, projects, contact) --- */
+    .main-sections {
+      display: flex;
+      flex-wrap: wrap; /* stacks on small screens */
+    }
+    .section-box {
+      flex: 1;
+      padding: 40px 20px;
+      min-width: 300px;
+    }
+
+    #skills {
+      background: #eaf7ea; /* light green */
+    }
+    #projects {
+      background: #fff4e6; /* light orange */
+    }
+    #contact {
+      background: #f9eaf7; /* light pink */
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* --- DOWNLOAD BUTTON --- */
+    .download-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-top: 10px;
+      background-color: #0077b5; /* LinkedIn blue */
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #005582;
+    }
+
+    #contact a {
+      color: #1a1a40;
+      text-decoration: none;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      background: #1a1a40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="about-left">
+      <img src="patrick.png" alt="Patrick Ouma Ombok">
+      <h2>Patrick Ouma Ombok</h2>
+      <p>Data Scientist | Data Analyst | Risk & Compliance Officer</p>
+    </div>
+    <div class="about-right">
+      <h2>About Me</h2>
+      <p>
+       I am a data scientist with over 1 year of experience in data science and analytics, 
+       supported by an MSc in Data Science and a Bachelor’s degree in Applied Statistics. 
+       My expertise spans machine learning, statistical modeling, and data-driven insights.
+       In addition, I bring over 2 years of experience in risk management, policy integration and review, data protection, and anti-money laundering monitoring.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN FLEX SECTION -->
+  <div class="main-sections">
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-box">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python and R programming</li>
+        <li>Data visualization (Tableau, Power BI, Matplotlib, ggplot2)</li>
+        <li>Risk & compliance functions</li>
+        <li>Data analysis</li>
+        <li>Data protection</li>
+        <li>Credit risk modelling</li>
+        <li>Machine learning</li>
+        <li>Deep learning</li>
+        <li>Computer vision</li>
+        <li>Anti-money laundering monitoring</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section-box">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Project 1</h3>
+          <p>HIV Testing Services (HTS) uptake in Kamkunji: Trends and gaps</p>
+          <a href="HTS.pdf" download class="download-btn">Download Report (PDF)</a>
+        </div>
+        <div class="card">
+          <h3>Project 2</h3>
+          <p>Nationwide and Nairobi SBGV trends: Implications for Kamkunji Constituency</p>
+          <a href="SGBV.pdf" download class="download-btn">Download Report (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-box">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:patrickombok6@gmail.com">patrickombok6@gmail.com</a></p>
+      <p>Phone: <a href="#">+254714605716</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/patrick6ombok" target="_blank">linkedin.com/in/patrick6ombok</a></p>
+      <p>GitHub: <a href="https://github.com/Pat24-O" target="_blank">github.com/Pat24-O</a></p>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Patrick Ouma Ombok. All rights reserved.</p>
+  </footer>
+</body>
+</html>
